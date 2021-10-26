@@ -29,8 +29,8 @@ const copyList = [
 
 const config = {
   projectName: 'ww-applets/<%= projectName %>',
-  date: '2021-10-12',
-  designWidth: 750,
+  date: '<%= date %>',
+  designWidth: 375,
   deviceRatio: {
     375: 2 / 1,
     640: 2.34 / 2,

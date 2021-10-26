@@ -5,7 +5,7 @@ module.exports = {
   defineConstants: {
     API_GATEWAY: '"http://www.hrvc.cc:9999"',
     REAL_ENV: '"PROD"',
-    AGENT_CODE: '"inner_work_shedule"'
+    AGENT_CODE: '"找后端要"'
   },
   mini: {},
   h5: {

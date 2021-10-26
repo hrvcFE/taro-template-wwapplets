@@ -10,7 +10,11 @@ export default function IndexPage () {
         linearEnd='#3775D7'
       >
       </NavBar>
-      这里是首页啊
+      <vant-button
+        type='primary'
+      >
+        Vant Button
+      </vant-button>
     </View>
   )
 }
