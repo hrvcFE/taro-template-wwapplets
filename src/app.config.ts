@@ -9,7 +9,9 @@ function getVantComponents (list) {
 
 const vantComponents = [
   'button',
-  'nav-bar'
+  'nav-bar',
+  'notify',
+  'dialog'
 ]
 
 export default {

@@ -6,7 +6,10 @@ const vantComponents = [
   'button',
   'icon',
   'loading',
-  'nav-bar'
+  'nav-bar',
+  'notify',
+  'popup',
+  'transition'
 ]
 const copyList = [
   'wxs',
