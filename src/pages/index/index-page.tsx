@@ -10,11 +10,11 @@ export default function IndexPage () {
         linearEnd='#3775D7'
       >
       </NavBar>
-      <vant-button
+      <van-button
         type='primary'
       >
         Vant Button
-      </vant-button>
+      </van-button>
     </View>
   )
 }
