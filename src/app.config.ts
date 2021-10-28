@@ -9,8 +9,20 @@ function getVantComponents (list) {
 
 const vantComponents = [
   'button',
-  'nav-bar',
   'notify',
+  'icon',
+  'loading',
+  'nav-bar',
+  'search',
+  'tabs',
+  'tab',
+  'skeleton',
+  'empty',
+  'divider',
+  'popup',
+  'datetime-picker',
+  'picker',
+  'switch',
   'dialog'
 ]
 

@@ -4,12 +4,21 @@ const VANT_BASE = 'src/components/vant-weapp/dist'
 const TARGET_BASE = 'dist/components/vant-weapp/dist'
 const vantComponents = [
   'button',
+  'notify',
   'icon',
   'loading',
+  'transition',
   'nav-bar',
-  'notify',
+  'cell',
+  'field',
+  'tabs',
+  'sticky',
+  'empty',
+  'divider',
   'popup',
-  'transition'
+  'picker',
+  'picker-column',
+  'switch'
 ]
 const copyList = [
   'wxs',
