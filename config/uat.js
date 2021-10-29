@@ -3,7 +3,7 @@ module.exports = {
     NODE_ENV: '"production"'
   },
   defineConstants: {
-    API_GATEWAY: '"http://uat.hrvc.cc:9999"',
+    API_GATEWAY: '"https://uat.hrvc.cc:9999"',
     REAL_ENV: '"UAT"',
     AGENT_CODE: '"找后端要"'
   },
