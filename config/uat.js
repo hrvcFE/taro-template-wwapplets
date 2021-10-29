@@ -10,3 +10,4 @@ module.exports = {
   mini: {},
   h5: {}
 }
+https://github.com/waycowei
