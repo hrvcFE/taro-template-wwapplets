@@ -7,7 +7,6 @@ import store from './store'
 
 
 function AppRoot (props) {
-  // Taro.clearStorageSync()
   const token = useSelector((state: any) => state.user.token)
   // 登录
   const dispatch = useDispatch()
