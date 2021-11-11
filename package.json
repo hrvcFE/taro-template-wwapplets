@@ -9,6 +9,8 @@
     "css": "sass"
   },
   "scripts": {
+    "gen:pages": "node ../../scripts/bin/generate-page.js",
+    "gen:cpt": "node ../../scripts/bin/generate-cpt.js",
     "build:weapp": "taro build --type weapp",
     "build:uat:qywx": "cross-env APP_ENV=uat taro build --type qywx",
     "build:qywx": "taro build --type qywx",
