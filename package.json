@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build:weapp": "taro build --type weapp",
-    "build:uat:weapp": "cross-env APP_ENV=uat taro build --type weapp",
+    "build:uat:qywx": "cross-env APP_ENV=uat taro build --type qywx",
     "build:qywx": "taro build --type qywx",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
