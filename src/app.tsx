@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, Component } from 'react'
 import { Provider, useDispatch, useSelector } from 'react-redux'
 import { queryUserList } from '@ww-applets/shared/store/actions/user'
 
@@ -20,15 +20,31 @@ function AppRoot (props) {
   return props.children
 }
 
-function App (props) {
+class App extends Component {
+  onLaunch () {
+    // 解决 iOS 不支持 Promise.finally 的问题
+    if (!Promise.prototype.finally) {
+      // eslint-disable-next-line
+      Promise.prototype.finally = function (onfinally?: (() => void)) {
+        let P = this.constructor
+        return this.then(
+          value => P.resolve(onfinally?.()).then(() => value),
+          reason => P.resolve(onfinally?.()).then(() => {throw reason })
+        )
+      }
+    }
+  }
+
   // props.children 是将要会渲染的页面
-  return (
-    <Provider store={store}>
-      <AppRoot>
-        {props.children}
-      </AppRoot>
-    </Provider>
-  )
+  render () {
+    return (
+      <Provider store={store}>
+        <AppRoot>
+          {this.props.children}
+        </AppRoot>
+      </Provider>
+    )
+  }
 }
 
 export default App
