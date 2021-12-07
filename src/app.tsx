@@ -1,6 +1,8 @@
 import { useEffect, Component } from 'react'
 import { Provider, useDispatch, useSelector } from 'react-redux'
 import { queryUserList } from '@ww-applets/shared/store/actions/user'
+import checkUpdateVersion from '@ww-applets/shared/utils/check-update'
+import polyfills from '@ww-applets/shared/utils/polyfills'
 
 import './app.scss'
 import store from './store'
@@ -22,17 +24,8 @@ function AppRoot (props) {
 
 class App extends Component {
   onLaunch () {
-    // 解决 iOS 不支持 Promise.finally 的问题
-    if (!Promise.prototype.finally) {
-      // eslint-disable-next-line
-      Promise.prototype.finally = function (onfinally?: (() => void)) {
-        let P = this.constructor
-        return this.then(
-          value => P.resolve(onfinally?.()).then(() => value),
-          reason => P.resolve(onfinally?.()).then(() => {throw reason })
-        )
-      }
-    }
+    checkUpdateVersion()
+    polyfills()
   }
 
   // props.children 是将要会渲染的页面

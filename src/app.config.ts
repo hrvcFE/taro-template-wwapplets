@@ -37,6 +37,5 @@ export default {
     enablePullDownRefresh: false,
     navigationStyle: 'custom'
   },
-  usingComponents: getVantComponents(vantComponents),
-  styleIsolation: 'shared'
+  usingComponents: getVantComponents(vantComponents)
 }
